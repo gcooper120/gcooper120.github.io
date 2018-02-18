@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/colleges.css">
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<title>College of Business and Economics</title>
+</head>
+<body>
+<div class="menu" >
+	  	<h1>Lehigh Book Market</h1>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="cas.html">CAS <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="pcr.html">P.C. Rossin <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="cbe.html">CBE <span class="sr-only">(current)</span></a>
+						</li>
+					</ul>	
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn my-2 my-sm-0 btn-outline-brown" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	<div>
+		<input id="filter" type="text" name="filterBox" maxlength="4" placeholder="filter">
+	</div>
+
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">ACCT</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">BUS</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">BIS</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">ECO</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="AAS.html" >
+			<div class='square-content'><div><span class="deptName">ENTP</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">FIN</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">IPRE</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">LAW</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">MGT</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">MKT</span></div></div>
+		</a>
+	</div>
+	<div class='square-box active'>
+		<a href="aas.html" >
+			<div class='square-content'><div><span class="deptName">SCM</span></div></div>
+		</a>
+	</div>
+	
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	//Used for resizing the page and setting layout based on mobile vs. Desktop
+		window.onload = setDepartments();
+		window.addEventListener("resize", function() {
+			setDepartments();
+		});
+
+		function setDepartments()
+		{
+			if (window.innerWidth < 500)
+			{
+				$(".square-box").removeClass("sbDesktop");
+				$(".square-box").addClass("sbMobile");
+			}
+			else if (window.innerWidth >= 500)
+			{
+				$(".square-box").addClass("sbDesktop");
+				$(".square-box").removeClass("sbMobile");
+			}
+		}
+
+		//end section
+		//Used for filtering the department boxes
+
+		$(document).ready(function() {
+	    $('#filter').keypress(function(key) {
+	    		//conditional: (lowercase or uppercase or backspace)
+	        if((key.which > 64 && key.which < 91) || (key.which > 96 && key.which < 123) || key.which == 8) {
+	        	//Ensure this executes after the key gets placed in the box.
+	        	setTimeout(function(){
+	        		filterDepartments($('#filter').val());
+	        	}, 0);
+	        	return true;
+	        }
+	        //Doesn't do anything for other keys
+	        else
+	        {
+	        	return false;
+	        }
+    	});
+    });
+
+		//Passed the text in the filter box
+		//Will compare this to every department name
+		//If departmentname.contains(filtertext)
+		//Brown out and make unclickable
+		//Else make white and clickable
+		function filterDepartments(filterText) {
+			filterText = filterText.toUpperCase();
+			$( ".square-box" ).each(function( index ) {
+		  	if (($(this).find('.deptName').text()).includes(filterText)) {
+		  		$(this).addClass('active');
+		  		$(this).removeClass('inactive');
+		  	}
+		  	else {
+		  		$(this).addClass('inactive');
+		  		$(this).removeClass('active');
+		  	}
+		});
+		};
+	</script>
+</body>
+</html>
